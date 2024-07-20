@@ -21,4 +21,10 @@ from DjangoChartJs.views import *
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('', IndexView.as_view()),
+    path('api/sample-bar-data', SampleBarDataView.as_view()),
+    path('api/sample-line-data', SampleLineDataView.as_view()),
+    path('api/sample-doughnut-data', SampleDoughnutDataView.as_view()),
+    path('api/sample-pie-data', SamplePieDataView.as_view()),
+    path('api/sample-radar-data', SampleRadarDataView.as_view()),
 ]
